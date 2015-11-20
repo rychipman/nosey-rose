@@ -1,0 +1,11 @@
+ghost:
+  image: ghost
+  ports:
+    - 3333:2368
+  volumes_from:
+    - data
+
+data:
+  image: busybox
+  volumes:
+    - /home/rchipman/development/workspaces/rose/config:/var/lib/ghost/
